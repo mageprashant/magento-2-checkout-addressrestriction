@@ -25,13 +25,13 @@ class LayoutProcessor
         $jsLayout['components']['checkout']['children']['steps']['children']['shipping-step']['children']
                 ['shippingAddress']['children']['shipping-address-fieldset']['children']['firstname']['validation']['max_text_length'] = 60;
         $jsLayout['components']['checkout']['children']['steps']['children']['shipping-step']['children']
-                ['shippingAddress']['children']['shipping-address-fieldset']['children']['firstname']['validation']['validate-alphanum-with-spaces'] = true;
+                ['shippingAddress']['children']['shipping-address-fieldset']['children']['firstname']['validation']['validate-special-characters'] = true;
 
         /* Lastname */
         $jsLayout['components']['checkout']['children']['steps']['children']['shipping-step']['children']
                 ['shippingAddress']['children']['shipping-address-fieldset']['children']['lastname']['validation']['max_text_length'] = 60;
         $jsLayout['components']['checkout']['children']['steps']['children']['shipping-step']['children']
-                ['shippingAddress']['children']['shipping-address-fieldset']['children']['lastname']['validation']['validate-alphanum-with-spaces'] = true;
+                ['shippingAddress']['children']['shipping-address-fieldset']['children']['lastname']['validation']['validate-special-characters'] = true;
 
         /* Company name */
         $jsLayout['components']['checkout']['children']['steps']['children']['shipping-step']['children']
@@ -59,14 +59,14 @@ class LayoutProcessor
                 ['children']['street']['children'][0]['validation']['max_text_length'] = 60;
         $jsLayout['components']['checkout']['children']['steps']['children']['shipping-step']['children']
                 ['shippingAddress']['children']['shipping-address-fieldset']
-                ['children']['street']['children'][0]['validation']['validate-alphanum-with-spaces'] = true;
+                ['children']['street']['children'][0]['validation']['validate-special-characters'] = true;
 
         $jsLayout['components']['checkout']['children']['steps']['children']['shipping-step']['children']
                 ['shippingAddress']['children']['shipping-address-fieldset']
                 ['children']['street']['children'][1]['validation']['max_text_length'] = 60;
         $jsLayout['components']['checkout']['children']['steps']['children']['shipping-step']['children']
                 ['shippingAddress']['children']['shipping-address-fieldset']
-                ['children']['street']['children'][1]['validation']['validate-alphanum-with-spaces'] = true;
+                ['children']['street']['children'][1]['validation']['validate-special-characters'] = true;
 
         $jsLayout = $this->validationBillingAddress($jsLayout);
 
@@ -93,7 +93,7 @@ class LayoutProcessor
             $jsLayout['components']['checkout']['children']['steps']['children']['billing-step']['children']
                     ['payment']['children']['payments-list']['children']
                     [$payment.'-form']['children']['form-fields']['children']
-                    ['firstname']['validation']['validate-alphanum-with-spaces'] = true;
+                    ['firstname']['validation']['validate-special-characters'] = true;
 
             /* Lastname */
             $jsLayout['components']['checkout']['children']['steps']['children']['billing-step']['children']
@@ -103,7 +103,7 @@ class LayoutProcessor
             $jsLayout['components']['checkout']['children']['steps']['children']['billing-step']['children']
                     ['payment']['children']['payments-list']['children']
                     [$payment.'-form']['children']['form-fields']['children']
-                    ['lastname']['validation']['validate-alphanum-with-spaces'] = true;
+                    ['lastname']['validation']['validate-special-characters'] = true;
 
             /* Company name */
             $jsLayout['components']['checkout']['children']['steps']['children']['billing-step']['children']
@@ -141,14 +141,14 @@ class LayoutProcessor
                     [$payment.'-form']['children']['form-fields']['children']['street']['children'][0]['validation']['max_text_length'] = 60;
             $jsLayout['components']['checkout']['children']['steps']['children']['billing-step']['children']
                     ['payment']['children']['payments-list']['children']
-                    [$payment.'-form']['children']['form-fields']['children']['street']['children'][0]['validation']['validate-alphanum-with-spaces'] = true;
+                    [$payment.'-form']['children']['form-fields']['children']['street']['children'][0]['validation']['validate-special-characters'] = true;
 
             $jsLayout['components']['checkout']['children']['steps']['children']['billing-step']['children']
                     ['payment']['children']['payments-list']['children']
                     [$payment.'-form']['children']['form-fields']['children']['street']['children'][1]['validation']['max_text_length'] = 60;
             $jsLayout['components']['checkout']['children']['steps']['children']['billing-step']['children']
                     ['payment']['children']['payments-list']['children']
-                    [$payment.'-form']['children']['form-fields']['children']['street']['children'][1]['validation']['validate-alphanum-with-spaces'] = true;
+                    [$payment.'-form']['children']['form-fields']['children']['street']['children'][1]['validation']['validate-special-characters'] = true;
         }
 
         return $jsLayout;
