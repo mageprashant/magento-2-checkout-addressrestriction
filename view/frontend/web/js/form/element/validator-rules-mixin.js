@@ -7,7 +7,7 @@ define([
         validator.addRule(
             'validate-special-characters',
             function (value) {
-                return $.mage.isEmptyNoTrim(value) || /^[a-z0-9\.-\s]+$/i.test(value);
+                return $.mage.isEmptyNoTrim(value) || /^[^|\<>[\]{}`%\\()&$]+$/i.test(value);
             },
             $.mage.__('Please remove invalid special characters: {}%!#@&*')
         );

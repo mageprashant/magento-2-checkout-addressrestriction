@@ -1,0 +1,30 @@
+{
+    "name": "mageprashant/magento2-checkout-address-restriction",
+    "description": "Magento 2 Checkout Address Restriction",
+    "type": "magento2-module",
+    "version": "1.0.1",
+    "license": "proprietary",
+    "keywords": [
+      "magento 2",
+      "checkout",
+      "address",
+      "restriction",
+      "magento 2 checkout address restriction"
+    ],
+    "authors": [
+      {
+        "name": "MagePrashant",
+        "email": "mageprashant@gmail.com",
+        "role": "Magento 2 Certified Developer"
+      }
+    ],
+    "autoload": {
+      "files": [
+        "registration.php"
+      ],
+      "psr-4": {
+        "MagePrashant\\Addressrestriction\\": ""
+      }
+    }
+  }
+  
